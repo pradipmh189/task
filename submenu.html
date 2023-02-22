@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        .main
+        {
+            height: 80px;
+            width: 100%;
+            background-color: aqua;
+        }
+        .mainlist
+        {
+            list-style: none;
+            float: left;
+            padding: 10px 20px;
+            line-height: 50px;
+        }
+        .sub
+        {
+            height: 80px;
+            width: 100%;
+            padding: 0%;
+        }
+        .sublist
+        {
+            list-style-type: none;
+            visibility: hidden;
+        }
+        .mainlist:hover .sub .sublist
+        {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <ul class="main">
+        <li class="mainlist">Home</li>
+        <li class="mainlist">service
+            <ul class="sub">
+                <li class="sublist">Page 1</li>
+                <li class="sublist">Page 2</li>
+            </ul>
+        
+        <li class="mainlist">about</li>
+        <li class="mainlist">Blog</li>
+    </ul>
+</body>
+</html>
